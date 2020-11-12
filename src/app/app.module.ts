@@ -11,6 +11,7 @@ import { ThingsToDoModule } from './things-to-do/things-to-do.module';
 import { NewsModule } from './news/news.module';
 import { GetInvolvedModule } from './get-involved/get-involved.module';
 import { AboutOtcModule } from './about-otc/about-otc.module';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { AboutOtcModule } from './about-otc/about-otc.module';
     ThingsToDoModule,
     NewsModule,
     GetInvolvedModule,
-    AboutOtcModule
+    AboutOtcModule,
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]
