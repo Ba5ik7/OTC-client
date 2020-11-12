@@ -1,12 +1,15 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { GetInvolvedComponent } from './get-involved/get-involved.component';
+import { GetInvolvedRoutingModule } from './get-involved-routing.module';
 
 
 
 @NgModule({
-  declarations: [],
+  declarations: [GetInvolvedComponent],
   imports: [
-    CommonModule
+    CommonModule,
+    GetInvolvedRoutingModule
   ]
 })
 export class GetInvolvedModule { }

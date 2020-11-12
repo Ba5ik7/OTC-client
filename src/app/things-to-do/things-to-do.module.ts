@@ -1,12 +1,15 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { ThingsToDoComponent } from './things-to-do/things-to-do.component';
+import { ThingsToDoRoutingModule } from './things-to-do-routing.module';
 
 
 
 @NgModule({
-  declarations: [],
+  declarations: [ThingsToDoComponent],
   imports: [
-    CommonModule
+    CommonModule,
+    ThingsToDoRoutingModule
   ]
 })
 export class ThingsToDoModule { }
