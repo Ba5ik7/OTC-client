@@ -5,7 +5,6 @@ import { ServicesModule } from './services/services.module';
 import { PipesModule } from './pipes/pipes.module';
 
 
-
 @NgModule({
   declarations: [],
   imports: [

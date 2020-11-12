@@ -1,10 +1,15 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { HeaderComponent } from './header/header.component';
+import { NavComponent } from './nav/nav.component';
+import { HomeBannerComponent } from './home-banner/home-banner.component';
+import { FooterComponent } from './footer/footer.component';
+import { SideColumnRightComponent } from './side-column-right/side-column-right.component';
 
 
 
 @NgModule({
-  declarations: [],
+  declarations: [HeaderComponent, NavComponent, HomeBannerComponent, FooterComponent, SideColumnRightComponent],
   imports: [
     CommonModule
   ]
