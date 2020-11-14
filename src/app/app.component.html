@@ -1,5 +1,8 @@
-<mat-toolbar color="primary">
-  <span>OTC Client</span>
-</mat-toolbar>`
-
-<router-outlet></router-outlet>
+<div class="app">
+  <app-header></app-header>
+  <main gdAreas="content content content sidebar">
+    <div gdArea="content"><router-outlet></router-outlet></div>
+    <app-side-column-right gdArea="sidebar"></app-side-column-right>
+  </main>
+  <app-footer></app-footer>
+</div>
