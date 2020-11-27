@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'OTC-Client';
+  public readonly GRID_LAYOUT = 'content content content sidebar';
 }

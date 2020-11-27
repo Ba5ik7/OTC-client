@@ -1,6 +1,6 @@
 <div class="app">
   <app-header></app-header>
-  <main gdAreas="content content content sidebar">
+  <main [gdAreas]="GRID_LAYOUT">
     <div gdArea="content"><router-outlet></router-outlet></div>
     <app-side-column-right gdArea="sidebar"></app-side-column-right>
   </main>

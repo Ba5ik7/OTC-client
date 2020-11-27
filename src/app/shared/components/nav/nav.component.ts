@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { NavItem } from '../../modals/nav-item';
+import { SharedService } from '../../services/shared.service';
 
 @Component({
   selector: 'app-nav',
@@ -7,9 +9,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavComponent implements OnInit {
 
-  constructor() { }
+  public navItems: NavItem[] = [];
+
+  constructor(private sharedService: SharedService) { }
 
   ngOnInit(): void {
+    this.sharedService.navItems.subscribe((data: NavItem[]) => this.navItems = [ ...data ]);
   }
-
 }
