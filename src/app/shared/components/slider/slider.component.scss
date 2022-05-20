@@ -1,0 +1,22 @@
+:host {
+  .current-image {
+    img {
+      width: 500px;
+    }
+  }
+
+  .image-list {
+    height: 70px;
+    position: relative;
+    cursor: pointer;
+
+    h5 {
+      position: absolute;
+      bottom: 0;
+    }
+
+    img {
+      width: 100px;
+    }
+  }
+}

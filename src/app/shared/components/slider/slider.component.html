@@ -1,0 +1,11 @@
+<div fxLayout="row">
+  <div fxLayout="column">
+    <div class="image-list" *ngFor="let imageItem of imageItems">
+      <h5>{{ imageItem.title }}</h5>
+      <img [src]="imageItem.image" (click)="thumbNailClicked(imageItem);" />
+    </div>
+  </div>
+  <div class="current-image">
+    <img [src]="currentImage?.image" />
+  </div>
+</div>

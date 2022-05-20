@@ -12,10 +12,12 @@ import { GetInvolvedModule } from './get-involved/get-involved.module';
 import { AboutOtcModule } from './about-otc/about-otc.module';
 import { SharedModule } from './shared/shared.module';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { TestPipe } from './pipes/test.pipe';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TestPipe
   ],
   imports: [
     BrowserModule,
